@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohit AI Tools - Free useful web tools in one place.">
+  <title>Mohit AI Tools</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">🤖 <span>Mohit AI Tools</span></div>
+    <button id="themeBtn" class="icon-btn" title="Toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">FREE • FAST • MOBILE FRIENDLY</div>
+      <h1>Useful tools.<br><span>All in one place.</span></h1>
+      <p>Simple browser-based tools made by Mohit. No login and no server required.</p>
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="Search tools..." aria-label="Search tools">
+        <span>⌕</span>
+      </div>
+    </section>
+
+    <section class="tools-section">
+      <div class="section-head">
+        <h2>Tools</h2>
+        <span id="toolCount">8 tools</span>
+      </div>
+
+      <div id="toolsGrid" class="tools-grid">
+        <article class="tool-card" data-name="qr code generator">
+          <div class="tool-icon">▦</div>
+          <h3>QR Code Generator</h3>
+          <p>Create a QR code from any text or link.</p>
+          <button class="open-btn" data-tool="qr">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="age calculator">
+          <div class="tool-icon">🎂</div>
+          <h3>Age Calculator</h3>
+          <p>Calculate your exact age from your date of birth.</p>
+          <button class="open-btn" data-tool="age">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="calculator">
+          <div class="tool-icon">🧮</div>
+          <h3>Calculator</h3>
+          <p>Quickly solve everyday mathematical calculations.</p>
+          <button class="open-btn" data-tool="calculator">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="unit converter">
+          <div class="tool-icon">↔️</div>
+          <h3>Unit Converter</h3>
+          <p>Convert length, weight and temperature units.</p>
+          <button class="open-btn" data-tool="units">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="text counter">
+          <div class="tool-icon">Aa</div>
+          <h3>Text Counter</h3>
+          <p>Count words, characters and lines instantly.</p>
+          <button class="open-btn" data-tool="text">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="password generator">
+          <div class="tool-icon">🔐</div>
+          <h3>Password Generator</h3>
+          <p>Generate a random strong password in your browser.</p>
+          <button class="open-btn" data-tool="password">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="stopwatch">
+          <div class="tool-icon">⏱️</div>
+          <h3>Stopwatch</h3>
+          <p>Start, pause and reset a simple stopwatch.</p>
+          <button class="open-btn" data-tool="stopwatch">Open Tool →</button>
+        </article>
+
+        <article class="tool-card" data-name="color picker">
+          <div class="tool-icon">🎨</div>
+          <h3>Color Picker</h3>
+          <p>Pick a color and copy its HEX value.</p>
+          <button class="open-btn" data-tool="color">Open Tool →</button>
+        </article>
+      </div>
+
+      <p id="noResults" class="no-results" hidden>No tools found.</p>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-box">
+      <button id="closeModal" class="close-btn">×</button>
+      <div id="toolContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 <strong>Mohit AI Tools</strong> • Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
